@@ -7,9 +7,224 @@
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
-    <script defer src="https://kit.fontawesome.com/0bef9420dc.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/484ee0d259.js" crossorigin="anonymous"></script>
     <script defer src="https://unpkg.com/scrollreveal@4.0.7"></script>
     <script defer src="scripts.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="app-column">
+      <div class="crazy-box">
+        <i class="fa-regular fa-square-a"></i>
+        <div class="text">
+          <b>ACME</b>
+          <div>North America</div>
+        </div>
+      </div>
+      <div class="crazy-box">
+        <i class="fa-regular fa-search"></i>
+        Search
+      </div>
+      <div class="nav-group">Group <i class="fa-regular fa-angle-down"></i></div>
+      <div class="crazy-box">
+        <i class="fa-regular fa-tools"></i>
+        <div class="text">Tools</div>
+      </div>
+      <div class="crazy-box">
+        <i class="fa-regular fa-file-spreadsheet"></i>
+        <div class="text">Configs</div>
+      </div>
+      <div class="crazy-box">
+        <i class="fa-regular fa-square-dollar"></i>
+        <div class="text">Pricing</div>
+      </div>
+      <div class="crazy-box">
+        <i class="fa-regular fa-cog"></i>
+        <div class="text">Settings</div>
+      </div>
+      <div class="crazy-box selected">
+        <i class="fa-regular fa-eye"></i>
+        <div class="text">UI Components</div>
+      </div>
+      <div class="fill"></div>
+      <div class="crazy-box">
+        <i class="fa-regular fa-arrow-right-arrow-left"></i>
+        <div class="text">Switch to End User</div>
+      </div>
+      <div class="crazy-box">
+        <div class="avatar">
+          <i class="fa-regular fa-circle-k"></i>
+        </div>
+        <div class="text">
+          <b>Kiana M.</b>
+          <div>System Admin</div>
+        </div>
+      </div>
+      <div class="crazy-box" id="app-brand">
+        <!-- prettier-ignore -->
+        <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M34.641 10L17.3205 0L0 10V30L6.73574 33.8889L6.73564 13.8889L17.3204 7.77779L27.9051 13.8889L27.9052 20.0168L34.641 23.9057V10ZM34.6412 30L17.3206 40L17.3206 20L34.6412 30Z" fill="url(#paint0_linear_612_20400)"></path>
+          <defs>
+          <linearGradient id="paint0_linear_612_20400" x1="17.3205" y1="0" x2="17.3205" y2="40" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#13508B"></stop>
+          <stop offset="1" stop-color="#00ADD8"></stop>
+          </linearGradient>
+          </defs>
+        </svg>
+        <div class="text">
+          <b id="app-brand-name">Revalize Cloud</b>
+          <p>Specialty Manufacturing</p>
+        </div>
+      </div>
+      <div class="crazy-box">
+        <i class="fa-regular fa-arrow-left-to-line"></i>
+      </div>
+    </div>
+    <!--<div class="app-column">column2 subnav</div>
+    <div class="app-column">column3 object listing</div>-->
+    <div class="app-page">
+      <h1>UI Components</h1>
+      <a
+        class="figma"
+        href="https://www.figma.com/file/azfaMIwNom2Uh6venIzRLC/DISCO-%E2%80%94-Kendo?type=design&node-id=434%3A242426&t=AAz4qffRCCjltrgF-1"
+        ><i class="fa-brands fa-figma"></i> View in Figma</a
+      >
+      <h2>Breadcrumb</h2>
+      <div class="breadcrumb-group">
+        <a href="#">Admin</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <a href="#">Pricing</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <a href="#">Price Books</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <a href="#">Price Book A</a>
+      </div>
+      <h2>Button</h2>
+      <div class="flex">
+        <div class="button">Flat</div>
+        <div class="button primary">Primary</div>
+        <div class="button secondary">Secondary</div>
+      </div>
+      <h2>ButtonGroup</h2>
+      <div class="button-group">
+        <div class="button secondary">First</div>
+        <div class="button secondary">Second</div>
+        <div class="button secondary">Third</div>
+      </div>
+      <h2>TextBox, MaskedTextBox</h2>
+      <div class="crazy-box">
+        <i class="fa-regular fa-search"></i>
+        <div class="text">Search</div>
+        <i class="fa-regular fa-close"></i>
+      </div>
+      <h2>NumericTextBox</h2>
+      <div class="crazy-box">
+        <div class="text">100</div>
+        <div class="numeric-controls">
+          <i class="fa-solid fa-caret-up"></i>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+      <h2>DropDownList, Label</h2>
+      <div class="label">Label</div>
+      <div class="crazy-box">
+        <div class="text">Choose an option…</div>
+        <i class="fa-regular fa-angle-down"></i>
+      </div>
+      <h2>Checkbox</h2>
+      <h2>Grid</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <i class="fa-regular fa-square"></i>
+            </th>
+            <th>Date</th>
+            <th>Subscription</th>
+            <th>Payment method</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <i class="fa-regular fa-square"></i>
+            </td>
+            <td>04/26/2023</td>
+            <td>1-year</td>
+            <td>Credit Card</td>
+            <td>$105.55</td>
+            <td>Refunded</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Filter</h2>
+    </div>
+    <div class="app-column">right panel</div>
+    <div class="app-drawer">drawer</div>
+    <div class="app-modal">modal</div>
+    <div class="app-column" id="ui">
+      <h2>UI Options</h2>
+      <div class="switch">
+        <i class="fa-solid fa-moon"></i>
+        <div class="text"><b>Dark mode</b></div>
+        <i class="fa-solid fa-toggle-off"></i>
+      </div>
+      <div>Nav theme</div>
+      <div class="option-group">
+        <div class="option selected" data-nav="de">
+          <i class="fa-regular fa-circle"></i>
+          <div class="text">
+            <b>Pricing Service</b>
+            <p>Design Encyclopedia</p>
+          </div>
+        </div>
+        <div class="option" data-nav="blue">
+          <i class="fa-regular fa-circle"></i>
+          <div class="text">
+            <b>Moona Blue</b>
+            <p>New for 2023</p>
+          </div>
+        </div>
+      </div>
+      <div>Page theme</div>
+      <div class="option-group">
+        <div class="option selected" data-theme="moona">
+          <i class="fa-regular fa-circle"></i>
+          <div class="text">
+            <b>Moona Custom</b>
+            <p>New for 2023</p>
+          </div>
+        </div>
+        <div class="option" data-theme="de">
+          <i class="fa-regular fa-circle"></i>
+          <div class="text">
+            <b>Design Encyclopedia</b>
+            <p>Used in Pricing service</p>
+          </div>
+        </div>
+        <div class="option" data-theme="kendo">
+          <i class="fa-regular fa-circle"></i>
+          <div class="text">
+            <b>Kendo Default</b>
+            <p>Telerik Pro License</p>
+          </div>
+        </div>
+        <div class="option" data-theme="bootstrap">
+          <i class="fa-regular fa-circle"></i>
+          <div class="text">
+            <b>Bootstrap v5</b>
+            <p>via Kendo UI</p>
+          </div>
+        </div>
+        <div class="option" data-theme="og">
+          <i class="fa-regular fa-circle"></i>
+          <div class="text">
+            <b>Configure One OG</b>
+            <p>Since 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

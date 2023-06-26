@@ -1,69 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 :root {
-  --background-color: #fff;
-  --link-color: #f86;
-  --text-color: #1119;
-  --title-color: #111;
+  --kendo-border-radius: 0.375rem;
+  --kendo-default-typography: 1rem/1.5 'Roboto', sans-serf;
+  --kendo-color-primary: #0d6efd;
+  --kendo-color-secondary: #6c757d;
+  --kendo-color-success: #198754;
+  --kendo-color-info: #0dcaf0;
+  --kendo-color-warning: #ffc107;
+  --kendo-color-danger: #dc3545;
+  --kendo-body-bg: #fff;
+  --kendo-body-text: #212529;
+  --kendo-subtle-text: #6c757d;
+  --kendo-disabled-text: #adb5bd;
+  --kendo-base-bg: #f8f9fa;
+  --kendo-hover-bg: #e9ecef;
+  --kendo-hover-text: var(--kendo-body-text);
+  --kendo-selected-bg: var(--kendo-color-primary);
+  --kendo-selected-text: #fff;
+  --kendo-button-bg: #e4e7eb;
+  --kendo-button-text: var(--kendo-body-text);
+  --kendo-link-text: var(--kendo-color-primary);
+  --kendo-link-hover-text: #0a58ca;
+
+  --moona-nav-bg: #fff;
+  --moona-nav-text: inherit;
+  --moona-border-color: var(--kendo-hover-bg);
 }
 
 /* cascade */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
-  background: var(--background-color);
-  color: var(--text-color);
-  font: 100%/1.5 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--kendo-body-bg);
+  color: var(--kendo-body-text);
+  font: var(--kendo-default-typography);
   margin: 0;
   text-rendering: geometricPrecision;
 }
 
-h1 {
-  color: var(--title-color);
-  font-size: 6rem;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  text-transform: uppercase;
+a {
+  color: var(--kendo-color-primary);
 }
-
-h2 {
-  color: var(--title-color);
-  font-size: 1.5rem;
-  line-height: 1.3;
-  margin: 3rem 0 1rem;
-}
-
-blockquote {
-  border-left: 3px solid var(--title-color);
-  display: block;
-  margin: unset;
-  padding: 0 2rem;
-}
-
-li {
-  margin: 0 0 1rem;
-}
-li strong {
-  color: var(--title-color);
+a:hover {
+  color: color-mix(in srgb, var(--kendo-color-primary) 80%, black);
+  text-decoration: underline;
 }
 
 p {
   margin: unset;
-}
-
-/* https://www.dannyguo.com/blog/animated-multiline-link-underlines-with-css/ */
-a {
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  color: var(--link-color);
-  text-decoration: none;
-  transition: background-size 0.5s cubic-bezier(0.1, 1, 0.3, 1);
-}
-a:focus,
-a:hover {
-  background-size: 100% 2px;
 }
 
 .External::after {
@@ -95,10 +84,351 @@ img {
 /* layout */
 
 body {
-  padding: 2rem;
+  display: flex;
+  overflow: hidden;
 }
 
-.Center {
-  margin: 0 auto;
-  max-width: 800px;
+.app-column {
+  background: var(--moona-nav-bg);
+  border-right: 1px solid var(--moona-border-color);
+  color: var(--moona-nav-text);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 1rem;
+  width: 16rem;
+}
+.app-page {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 1rem;
+}
+.app-page + .app-column {
+  display: none;
+}
+.app-drawer {
+  display: none;
+}
+.app-modal {
+  display: none;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.option {
+  align-items: center;
+  border-right: 1px solid var(--moona-border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  line-height: 1rem;
+  padding: 12px;
+}
+.selected {
+  border-color: inherit;
+  color: var(--kendo-color-primary);
+}
+
+.switch {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+}
+.text {
+  flex: 1;
+}
+.text b {
+  font-size: 1rem;
+}
+.text p {
+  opacity: 0.5;
+}
+.option i {
+  font-size: 20px;
+}
+
+/* colors */
+
+.nav-blue {
+  --moona-nav-bg: var(--kendo-color-primary);
+  --moona-nav-text: #fff;
+}
+.nav-blue .crazy-box {
+  background: unset;
+}
+.nav-blue .crazy-box:hover {
+  background: #fff1;
+}
+.nav-blue .selected {
+  background: #fff1;
+  border: unset;
+  color: #fff;
+}
+
+.theme-moona {
+  --kendo-default-typography: 14px/1 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --kendo-body-bg: #f7f7f8;
+  --kendo-color-primary: #0856cf;
+}
+.theme-de {
+  --kendo-default-typography: 14px/1.25 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --kendo-color-primary: #0856cf;
+}
+.theme-kendo {
+}
+.theme-bootstrap {
+  --kendo-default-typography: 100%/1.5 system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans',
+    'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.theme-og {
+  --kendo-default-typography: 14px/1 'Karla', sans-serif;
+  --kendo-body-bg: #f1f3f5;
+  --kendo-body-text: #335;
+  --kendo-color-primary: #36f;
+}
+
+/* overrides + nested things, rework probably */
+
+.nav-blue .app-column {
+  background: color-mix(in srgb, var(--kendo-color-primary) 90%, black);
+  border: unset;
+}
+.nav-blue .app-column + .app-column {
+  background: var(--kendo-color-primary);
+}
+.nav-blue .app-column + .app-column + .app-column {
+  background: color-mix(in srgb, var(--kendo-color-primary) 95%, white);
+}
+
+.nav-de .option {
+  border: none;
+}
+.nav-de .option.selected,
+.nav-de .crazy-box.selected {
+  background: #36f1;
+}
+
+.theme-moona .app-page {
+  padding: 2rem;
+}
+.theme-moona a,
+.theme-de a {
+  color: inherit;
+  text-decoration: unset;
+}
+
+.theme-de .app-page {
+  padding: 2.5rem;
+}
+
+.theme-kendo .breadcrumb-group {
+  gap: unset;
+}
+.theme-kendo .breadcrumb-group a {
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+.theme-kendo .breadcrumb-group a:hover {
+  background: var(--kendo-base-bg);
+}
+.theme-kendo .app-page .crazy-box {
+}
+.theme-kendo .numeric-controls,
+.theme-bootstrap .numeric-controls {
+  background: var(--kendo-button-bg);
+}
+
+.theme-bootstrap .breadcrumb-group a {
+  padding: 0.5rem;
+}
+
+.theme-og .app-page {
+  padding: 1.5rem;
+}
+.theme-og .breadcrumb-group {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px #0003;
+  padding: 4px 1rem;
+}
+.theme-og .primary {
+  background: linear-gradient(to top, #36f, #39f);
+  box-shadow: 0 1px 2px #0002;
+}
+.theme-og table {
+  background: unset;
+  border: unset;
+  box-shadow: unset;
+}
+.theme-og th,
+.theme-og td {
+  background: #fff;
+  border: unset;
+  margin: 0 0 8px;
+}
+.theme-og th:first-child,
+.theme-og td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.theme-og th:last-child,
+.theme-og td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* crazy */
+
+.crazy-box {
+  align-items: center;
+  background: #fff;
+  border-radius: var(--kendo-border-radius);
+  cursor: pointer;
+  display: flex;
+  gap: 6px;
+  line-height: 1rem;
+  padding: 12px;
+}
+.crazy-box:hover {
+  background: var(--kendo-hover-bg);
+}
+.crazy-box i {
+  font-size: 1rem;
+}
+
+/* components */
+
+.breadcrumb-group {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+.breadcrumb-group i,
+.breadcrumb-group a:last-of-type {
+  color: var(--kendo-disabled-text);
+}
+.breadcrumb-group a {
+  padding: 0.5rem 0;
+}
+.breadcrumb-group i {
+  font-size: 12px;
+}
+
+.button {
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+.primary {
+  background: var(--kendo-selected-bg);
+  color: var(--kendo-selected-text);
+}
+.secondary {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px #0001;
+}
+
+.button-group {
+  display: flex;
+}
+.button-group .button {
+  border-radius: unset;
+}
+.button-group .button:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.button-group .button:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.button-group .button:not(:last-child) {
+  border-right: unset;
+}
+
+.app-page .crazy-box {
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px #0001;
+}
+.app-page .crazy-box:hover {
+  background: unset;
+}
+
+.numeric-controls {
+  display: flex;
+  flex-direction: column;
+  margin: -0.5rem;
+}
+
+/* dirty helpers */
+
+.flex {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+.fill {
+  flex: 1;
+}
+
+/* grid */
+/* adamlynch.com/flexible-data-tables-with-css-grid */
+
+table {
+  background: #fff;
+  border-collapse: collapse;
+  border-radius: 0.5rem;
+  border: 1px solid var(--moona-border-color);
+  box-shadow: 0 1px 2px #0001;
+  display: grid;
+  grid-template-columns:
+    minmax(4rem, 4rem)
+    minmax(6rem, 1fr)
+    minmax(6rem, 1fr)
+    minmax(6rem, 1fr)
+    minmax(6rem, 1fr)
+    minmax(6rem, 1fr);
+  min-width: 100%;
+}
+thead,
+tbody,
+tr {
+  display: contents;
+}
+th,
+td {
+  border-bottom: 1px solid var(--moona-border-color);
+  overflow: hidden;
+  padding: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+th {
+  position: sticky;
+  text-align: left;
+  top: 0;
+}
+tr:last-child td {
+  border: unset;
+}
+
+.figma {
+  background: #111;
+  border-radius: 22px;
+  color: #fff !important;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 1rem 0;
+  padding: 12px 18px;
 }
