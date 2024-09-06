@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <script defer src="https://kit.fontawesome.com/0bef9420dc.js" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer src="https://unpkg.com/tippy.js@6"></script>
+    <script defer src="nav.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="brand c1c">Configure One <b>Cloud</b></div>
+      <div class="fill"></div>
+      <div class="search" tabindex="0">
+        <i class="far fa-search"></i>
+        <input placeholder="Search" />
+      </div>
+      <div class="button">
+        <i class="far fa-arrow-right-arrow-left"></i>
+        Front End
+      </div>
+      <div id="account">
+        <i class="far fa-user-circle"></i>
+      </div>
+    </header>
+    <div id="columns">
+      <nav class="nav-list" id="nav-main">
+        <div class="nav-item selected" data-label="Dashboard">
+          <i class="far fa-dashboard"></i>
+        </div>
+        <div class="nav-item" data-label="Setup">
+          <i class="far fa-gear-complex-code"></i>
+        </div>
+        <div class="nav-item" data-label="Products">
+          <i class="far fa-cube"></i>
+        </div>
+        <div class="nav-item" data-label="Interface">
+          <i class="far fa-table-layout"></i>
+        </div>
+        <div class="nav-item" data-label="Results">
+          <i class="far fa-folder-arrow-down"></i>
+        </div>
+        <div class="nav-item" data-label="Masters">
+          <i class="far fa-album-collection"></i>
+        </div>
+        <div class="nav-item" data-label="Quotes">
+          <i class="far fa-file-invoice-dollar"></i>
+        </div>
+        <div class="nav-item" data-label="Routings">
+          <i class="far fa-swap"></i>
+        </div>
+        <div class="nav-item" data-label="Workflow">
+          <i class="far fa-timeline-arrow"></i>
+        </div>
+        <div class="nav-item" data-label="Security">
+          <i class="far fa-shield-check"></i>
+        </div>
+        <div class="nav-item" data-label="Publish">
+          <i class="far fa-paper-plane"></i>
+        </div>
+        <div class="nav-item" data-label="Reports">
+          <i class="far fa-file-chart-pie"></i>
+        </div>
+        <div class="nav-item" data-label="Query">
+          <i class="far fa-file-search"></i>
+        </div>
+        <div class="nav-item" data-label="System">
+          <i class="far fa-database"></i>
+        </div>
+        <div class="nav-item" data-label="Logs">
+          <i class="far fa-rectangle-list"></i>
+        </div>
+      </nav>
+      <nav class="nav-list" id="nav-sub">
+        <div class="nav-header">
+          <h2>Subnav Header</h2>
+          <p>Helpful description.</p>
+        </div>
+        <div class="nav-item selected">Configurations by Product</div>
+        <div class="nav-item">Configurations by Project</div>
+        <div class="nav-item">Configurations by User</div>
+        <div class="nav-item">Configurations by User Group</div>
+        <div class="nav-item">Configurations by Workgroup</div>
+        <div class="nav-item">Configurations by Configuration Name</div>
+        <div class="nav-item">Configurations by Product, Status &amp; Date</div>
+        <div class="nav-item">Configurations by Serial Number</div>
+        <div class="nav-item">Configurations by Item Number</div>
+        <div class="nav-item">Configuration Free-Form Query</div>
+        <div class="nav-item">Configurations Errored by Product</div>
+        <div class="nav-item">Item Master Data Query</div>
+        <div class="nav-item">Quotes by Serial Number</div>
+      </nav>
+      <main>
+        <div id="page-header">[page header]</div>
+        <div id="main-content">
+          <div id="main-fill">
+            <div class="placeholder-module">[main content]</div>
+          </div>
+          <div id="main-side">
+            <div class="placeholder-module">[side content]</div>
+          </div>
+        </div>
+        <footer>[page footer]</footer>
+      </main>
+    </div>
+  </body>
+</html>

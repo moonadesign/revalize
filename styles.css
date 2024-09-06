@@ -1,0 +1,158 @@
+/* dark mode */
+
+.dark {
+  --color-background: var(--color-gray-100);
+  --color-clear-7: #fff1; /* 6.7% */
+  --color-clear-20: #fff3; /* 20% */
+  --color-clear-40: #fff6; /* 40% */
+  --color-clear-60: #fff9; /* 60% */
+  --color-clear-80: #fffc; /* 80% */
+  --color-gray-50: #161b26;
+  --color-gray-100: #1f242f;
+  --color-gray-200: #333741;
+  --color-gray-300: #61646c;
+  --color-gray-400: #85888e;
+  --color-gray-600: #cecfd2;
+  --color-gray-900: #fff;
+  --color-text: var(--color-gray-600);
+  --color-white: #0c111d; /* dark gray 950 */
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  /* or @media (color-gamut: p3) */
+  .dark {
+  }
+}
+
+.dark {
+  background: var(--color-white);
+}
+
+/* branding */
+
+.brand {
+  align-items: center;
+  color: var(--color-gray-900);
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  gap: 12px;
+  letter-spacing: -0.02em;
+}
+.moona {
+  fill: currentColor;
+  width: 3rem;
+}
+
+/* typography */
+
+h1,
+h2 {
+  color: var(--color-gray-900);
+}
+h1 {
+  font-size: 6rem;
+  letter-spacing: -0.04em;
+}
+h2 {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+/* layout */
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header,
+section,
+footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+section {
+  /* min-height: 65vh; */
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 75rem;
+  width: 100%;
+}
+
+/* projects */
+
+#project-loop {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.project {
+  background: var(--color-gray-50);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  transition: background 0.4s;
+}
+.project:hover {
+  background: var(--color-gray-100);
+}
+.project-year,
+.project-note,
+.project-updated {
+  color: var(--color-gray-300);
+}
+
+.project-people {
+  display: flex;
+  gap: 2rem;
+}
+.project-people > * {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.project-people b {
+  color: var(--color-gray-900);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.project-link {
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid var(--color-gray-200);
+  color: var(--color-gray-600);
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  font-weight: 600;
+  gap: 8px;
+  line-height: 20px;
+  min-height: 2.5rem;
+  padding: 10px 12px;
+}
+.project-link:hover {
+  background: var(--color-gray-900);
+  color: var(--color-background);
+}
+
+.project-updated b {
+  color: var(--color-gray-600);
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* colors */
+
+:root {
+  --color-background: var(--color-gray-100);
+  --color-clear-7: #fff1; /* 6.7% */
+  --color-clear-20: #fff3; /* 20% */
+  --color-clear-40: #fff6; /* 40% */
+  --color-clear-60: #fff9; /* 60% */
+  --color-clear-80: #fffc; /* 80% */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f2f4f7;
+  --color-gray-200: #e4e7ec;
+  --color-gray-300: #d0d5dd;
+  --color-gray-400: #98a2b3;
+  --color-gray-600: #475467;
+  --color-gray-900: #101828;
+  --color-gray-950: #0c111d;
+  --color-primary-500: #0856cf;
+  --color-primary-700: #0040a1;
+  --color-text: var(--color-gray-600);
+  --color-white: white;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  /* or @media (color-gamut: p3) */
+  :root {
+    --color-primary-500: color(display-p3 0.0314 0.3373 0.8118);
+    --color-primary-700: color(display-p3 0 0.251 0.6314);
+  }
+}
+
+/* reset */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+input,
+textarea {
+  appearance: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: 20px;
+  letter-spacing: inherit;
+  outline: 0;
+  padding: 0;
+}
+
+/* typography */
+
+body {
+  font: 100%/1 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  text-rendering: geometricPrecision;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* branding */
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+/* layout */
+
+/* layout helpers */
+
+.fill {
+  flex: 1;
+}

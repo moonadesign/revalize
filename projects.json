@@ -1,0 +1,122 @@
+[
+  {
+    "year": 2024,
+    "name": "Admin Navigation",
+    "note": "For Configure One Cloud",
+    "designer": "Moona Design",
+    "owner": "Mary Gerrity",
+    "links": [
+      {
+        "label": "Prototype",
+        "type": "browser",
+        "url": "c1c"
+      },
+      {
+        "label": "View Source",
+        "type": "github",
+        "url": "https://github.com/moonadesign/revalize/tree/main/c1c"
+      },
+      {
+        "label": "Trello",
+        "type": "trello",
+        "url": "https://trello.com/c/LcIUHXgN/37-updated-admin-nav-ixd-for-brandon"
+      }
+    ],
+    "status": "active",
+    "updated": "2024-09-09"
+  },
+  {
+    "year": 2024,
+    "name": "Admin Dashboard",
+    "note": "For Configure One Cloud",
+    "designer": "Moona Design",
+    "owner": "Mary Gerrity",
+    "links": [
+      {
+        "label": "Mockup",
+        "type": "figma",
+        "url": "https://www.figma.com/design/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?node-id=475-18599&t=gBrfytjY3h4Sd38u-4"
+      },
+      {
+        "label": "Trello",
+        "type": "trello",
+        "url": "https://trello.com/c/C4vKIw4T/13-admin-dashboard-q2"
+      }
+    ],
+    "status": "active",
+    "updated": "2024-08-09"
+  },
+  {
+    "year": 2024,
+    "name": "Visualization Service",
+    "note": "For Axenom",
+    "designer": "Moona Design",
+    "owner": "Kiana Mostajabian",
+    "links": [
+      {
+        "label": "Mockups",
+        "type": "figma",
+        "url": "https://www.figma.com/design/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?node-id=475-24864&t=gBrfytjY3h4Sd38u-4"
+      },
+      {
+        "label": "Prototype",
+        "type": "figma",
+        "url": "https://www.figma.com/proto/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?page-id=258%3A1712&node-id=371-15369&node-type=CANVAS&viewport=-651%2C-6303%2C0.94&t=twnYmi51icXsocQo-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=371%3A15369"
+      },
+      {
+        "label": "Trello",
+        "type": "trello",
+        "url": "https://trello.com/c/4ckwT89T/27-3d-workspace-click-prototype"
+      }
+    ],
+    "status": "suspended",
+    "updated": "2024-08-02"
+  },
+  {
+    "year": 2024,
+    "name": "Pump Selector",
+    "note": "Part of migrating Intelliquip into Configure One Cloud",
+    "designer": "Moona Design",
+    "owner": "Eric Brockway",
+    "links": [
+      {
+        "label": "Mockups",
+        "type": "figma",
+        "url": "https://www.figma.com/design/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?node-id=213-2297"
+      },
+      {
+        "label": "Prototype",
+        "type": "figma",
+        "url": "https://www.figma.com/proto/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?page-id=213%3A2297&node-id=213-12173&node-type=CANVAS&viewport=25%2C343%2C0.12&t=zhCoOFOGg8spENbS-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=213%3A12173"
+      },
+      {
+        "label": "Trello",
+        "type": "trello",
+        "url": "https://trello.com/c/koA0jUDg/15-selectors-in-c1c-q2"
+      }
+    ],
+    "status": "active",
+    "updated": "2024-07-26"
+  },
+  {
+    "year": 2024,
+    "name": "Equation Editor",
+    "note": "Part of the pricing service for Configure One Cloud",
+    "designer": "Moona Design",
+    "owner": "Kiana Mostajabian",
+    "links": [
+      {
+        "label": "Prototype",
+        "type": "figma",
+        "url": "https://www.figma.com/proto/gKewvLZNEpbrot1q7KUy3Q/Configure-One-%E2%80%94-H1-2024?page-id=486%3A12241&type=design&node-id=487-17367&viewport=377%2C480%2C0.1&t=ByhSJSB2VHtvpOkh-1&scaling=min-zoom&starting-point-node-id=487%3A17367&show-proto-sidebar=1"
+      },
+      {
+        "label": "Trello",
+        "type": "trello",
+        "url": "https://trello.com/c/U8upBQCE/1-all-decisions-related-to-new-equations-flow-collected-in-one-prototype"
+      }
+    ],
+    "status": "unknown",
+    "updated": "2024-02-29"
+  }
+]
