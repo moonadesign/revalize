@@ -2,12 +2,22 @@
   {
     "year": 2024,
     "name": "Admin Navigation",
-    "note": "For Configure One Cloud",
+    "note": "IMPORTANT: Prototype takes precedence over Figma mockup for interactions.",
     "designer": "Moona Design",
     "owner": "Mary Gerrity",
     "links": [
       {
+        "label": "Mockup",
+        "type": "figma",
+        "url": "https://www.figma.com/design/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?node-id=939-2001&node-type=frame&t=ecH5EpRjLY02SocM-11"
+      },
+      {
         "label": "Prototype",
+        "type": "figma",
+        "url": "https://www.figma.com/proto/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?page-id=939%3A304&node-id=939-2001&node-type=canvas&viewport=-646%2C290%2C0.54&t=pK03KVPvikGu3vAT-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=939%3A2001"
+      },
+      {
+        "label": "Live Demo",
         "type": "browser",
         "url": "c1c"
       },
@@ -23,7 +33,7 @@
       }
     ],
     "status": "active",
-    "updated": "2024-09-09"
+    "updated": "2024-09-10"
   },
   {
     "year": 2024,
