@@ -1,6 +1,53 @@
 [
   {
     "year": 2024,
+    "name": "Home Dashboard",
+    "note": "For Configure One Cloud",
+    "designer": "Moona Design",
+    "owner": "Mary Gerrity",
+    "links": [
+      {
+        "label": "Mockup",
+        "type": "figma",
+        "url": "https://www.figma.com/design/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?node-id=647-9223&node-type=frame&t=paMGiPWSpTHJ7AvB-11"
+      },
+      {
+        "label": "Prototype",
+        "type": "figma",
+        "url": "https://www.figma.com/proto/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?page-id=647%3A8776&node-id=647-9223&node-type=canvas&viewport=-266%2C-72%2C0.25&t=bOl1rI2KHyjUi4I0-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=647%3A9223"
+      },
+      {
+        "label": "Trello",
+        "type": "trello",
+        "url": "https://trello.com/c/CG3J782x/39-home-dashboard-misc-details"
+      }
+    ],
+    "status": "active",
+    "updated": "2024-10-17"
+  },
+  {
+    "year": 2024,
+    "name": "Admin Dashboard",
+    "note": "For Configure One Cloud",
+    "designer": "Moona Design",
+    "owner": "Mary Gerrity",
+    "links": [
+      {
+        "label": "Mockup",
+        "type": "figma",
+        "url": "https://www.figma.com/design/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?node-id=2553-1942&node-type=frame&t=RmKUctt0FrAQWiq4-11"
+      },
+      {
+        "label": "Trello",
+        "type": "trello",
+        "url": "https://trello.com/c/C4vKIw4T/13-admin-dashboard-q2"
+      }
+    ],
+    "status": "active",
+    "updated": "2024-10-17"
+  },
+  {
+    "year": 2024,
     "name": "Admin Navigation",
     "note": "IMPORTANT: Prototype takes precedence over Figma mockup for interactions.",
     "designer": "Moona Design",
@@ -34,48 +81,6 @@
     ],
     "status": "active",
     "updated": "2024-09-10"
-  },
-  {
-    "year": 2024,
-    "name": "Home Dashboard",
-    "note": "For Configure One Cloud",
-    "designer": "Moona Design",
-    "owner": "Mary Gerrity",
-    "links": [
-      {
-        "label": "Mockup",
-        "type": "figma",
-        "url": "https://www.figma.com/design/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?node-id=647-9223&node-type=frame&t=paMGiPWSpTHJ7AvB-11"
-      },
-      {
-        "label": "Trello",
-        "type": "trello",
-        "url": "https://trello.com/c/CG3J782x/39-home-dashboard-misc-details"
-      }
-    ],
-    "status": "active",
-    "updated": "2024-09-10"
-  },
-  {
-    "year": 2024,
-    "name": "Admin Dashboard",
-    "note": "For Configure One Cloud",
-    "designer": "Moona Design",
-    "owner": "Mary Gerrity",
-    "links": [
-      {
-        "label": "Mockup",
-        "type": "figma",
-        "url": "https://www.figma.com/design/vNAy6s45yNATLvKTlBKW0y/Configure-One-%E2%80%94-H2-2024?node-id=475-18599&t=gBrfytjY3h4Sd38u-4"
-      },
-      {
-        "label": "Trello",
-        "type": "trello",
-        "url": "https://trello.com/c/C4vKIw4T/13-admin-dashboard-q2"
-      }
-    ],
-    "status": "active",
-    "updated": "2024-08-09"
   },
   {
     "year": 2024,
