@@ -1,5 +1,31 @@
 [
   {
+    "year": 2025,
+    "name": "Option Based Pricing",
+    "note": "For Configure One Cloud",
+    "designer": "Moona Design",
+    "owner": "Mary Gerrity",
+    "links": [
+      {
+        "label": "Mockup",
+        "type": "figma",
+        "url": "https://www.figma.com/design/cSVYl2MJ4vERPRAfVc8mpw/Option-Based-Pricing?node-id=670-41368&t=FtFabmbxvJ3nWbU2-11"
+      },
+      {
+        "label": "Prototype",
+        "type": "figma",
+        "url": "https://www.figma.com/proto/cSVYl2MJ4vERPRAfVc8mpw/Option-Based-Pricing?page-id=0%3A1&node-id=670-41929&viewport=190%2C27%2C0.04&t=O8YWgaie8GHHQ1Xl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=670%3A41929"
+      },
+      {
+        "label": "Trello",
+        "type": "trello",
+        "url": "https://trello.com/c/DcymCBdt/43-option-based-pricing"
+      }
+    ],
+    "status": "active",
+    "updated": "2025-03-27"
+  },
+  {
     "year": 2024,
     "name": "Home Dashboard",
     "note": "For Configure One Cloud",
